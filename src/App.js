@@ -1,22 +1,28 @@
 import { Route,Routes } from 'react-router-dom';
+import {Header} from "./components/Header";
+import {Footer} from "./components/Footer";
 import {Home} from "./components/Home";
 import {ProductList} from "./components/ProductList";
 import {ProductDetail} from "./components/ProductDetail";
-import {Contact} from "./components/Contact"
+import {Contact} from "./components/Contact";
+
+
 import './App.css';
 
 function App() {
   return (
 
     <div className="App">
-      <header>Header</header>
+      <Header />
+      <main>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='products' element={<ProductList />}></Route>
-        <Route path='products/1001' element={<ProductDetail />}></Route>
-        <Route path='contact' element={<Contact />}></Route>
+        <Route path='/' element={<Home />}/>
+        <Route path='products' element={<ProductList />}/>
+        <Route path='products/1001' element={<ProductDetail />}/>
+        <Route path='contact' element={<Contact />}/>
       </Routes>
-      <footer>Footer</footer>
+      </main>
+      <Footer />
     </div>
   );
 }

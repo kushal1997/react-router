@@ -3,3 +3,40 @@
   margin: auto;
   padding: 0px 10px;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid #EEEEEE;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+footer{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  height: 70px;
+  font-size: 18px;
+  border-top: 1px solid var(--theme-border);
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  max-width: 40px;
+  margin-right: 5px;
+}
+.navigation .link{
+  padding: 10px;
+}
+.navigation .link.active{
+  background-color: #EEEEEE;
+  border-radius: 5px;
+}
+
+
