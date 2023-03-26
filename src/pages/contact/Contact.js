@@ -6,12 +6,12 @@ export const Contact = () => {
     navigate("/");
   }
   return (
-    <>
+    <main>
       <div className="component">Contact</div>
       <Outlet/>
       <button onClick={handleSubmit}>Back To Home</button>
       
-    </>
+    </main>
     
   )
 }
