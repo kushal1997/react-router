@@ -7,9 +7,13 @@ import {ProductDetail} from "./components/ProductDetail";
 import {Contact} from "./components/Contact";
 import { Admin } from './components/Admin';
 import { PageNotFound } from './components/PageNotFound';
+import {ContactIn} from './components/ContactIn';
+import {ContactUs} from './components/ContactUs';
+import { ContactOther } from './components/ContactOther';
 
 
 import './App.css';
+
 
 function App() {
   const user=true;
@@ -22,7 +26,11 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='products' element={<ProductList />}/>
         <Route path='products/:id' element={<ProductDetail />}/>
-        <Route path='contact' element={<Contact />}/>
+        <Route path='contact' element={<Contact />}>
+          <Route path='in' element={<ContactIn />}/>
+          <Route path='us' element={<ContactUs />}/>
+          <Route path='*' element={<ContactOther />}/>
+        </Route>
         <Route path='admin' element={user ? <Admin/>:<Navigate to="/" />}/>
         <Route path='*' element={<PageNotFound title="404"/>}/>
       </Routes>

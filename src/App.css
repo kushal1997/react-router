@@ -39,12 +39,11 @@ footer{
   border-radius: 5px;
 }
 .component{
-  display: flex;
-  justify-content: center;
-  font-size: larger;
-  border-bottom: 1px solid #EEEEEE;
-  height: 70px;
-  margin: auto;
-  align-items: center;
+  font-size: 22px;
+  padding: 20px 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px 0px;
 }
 
