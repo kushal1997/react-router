@@ -38,5 +38,13 @@ footer{
   background-color: #EEEEEE;
   border-radius: 5px;
 }
-
+.component{
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  border-bottom: 1px solid #EEEEEE;
+  height: 70px;
+  margin: auto;
+  align-items: center;
+}
 
